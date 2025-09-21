@@ -1,0 +1,14 @@
+{
+    "flavour": "mocha",
+    "color": "blue",
+    "exclude": [
+        "firefox",
+        "zshenv"
+    ],
+    "extra_options": {
+        "wallpaper": {
+            "wallpaper_type": "static",
+            "wall_name": null
+        }
+    }
+}

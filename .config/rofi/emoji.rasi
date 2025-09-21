@@ -1,10 +1,11 @@
 * {
-    font: "Montserrat 9";   
+    font: "Montserrat 9";
+
     bg0:  #24242480;
     bg1:  #363636;
     bg2:  #f5f5f520;
     bg3:  #f5f5f540;
-    bg4:  #fab387;
+    bg4:  #89b4fa;
 
     fg0:  #f5f5f5;
     fg1:  #f5f5f580;
