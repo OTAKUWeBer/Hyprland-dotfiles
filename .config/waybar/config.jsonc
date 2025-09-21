@@ -22,7 +22,6 @@
         "custom/divider",
         "memory",
         "cpu",
-
         "custom/divider",
         "tray"
     ],
@@ -69,8 +68,7 @@
         }
     },
     "backlight": {
-        "device": "intel_backlight",
-        "format": "{percent}%{icon}",
+        "format": "{percent}% {icon}",
         "format-icons": ["󰃞", "󰃟", "󰃠"]
     },
     "pulseaudio": {
