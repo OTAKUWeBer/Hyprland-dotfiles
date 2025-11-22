@@ -19,6 +19,7 @@ alias wd="wg-quick down nl"
 alias cd="z"
 
 #pkg
+alias update="paru -Syu --skipreview"
 alias searchpkg="paru -Ss"
 alias install="paru -S --skipreview"
 alias uninstall="paru -Rss"
@@ -150,3 +151,14 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 # Initialize zoxide for faster directory navigation
 eval "$(zoxide init zsh)"
+
+PATH="~/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="~/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="~/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"~/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=~/perl5"; export PERL_MM_OPT;
+
+export ANDROID_SDK_ROOT="/opt/android-sdk"
+export ANDROID_HOME="$ANDROID_SDK_ROOT"
+export PATH="$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$ANDROID_SDK_ROOT/platform-tools"
+
