@@ -60,8 +60,6 @@ window#waybar.hidden {
 #memory,
 #cpu,
 #temperature,
-#battery,
-#backlight,
 #clock{
     padding-right: 5px;
     padding-left: 5px;
@@ -72,8 +70,6 @@ window#waybar.hidden {
 #memory:hover,
 #cpu:hover,
 #temperature:hover,
-#battery:hover,
-#backlight:hover,
 #clock:hover {
     color: #89b4fa;
 }

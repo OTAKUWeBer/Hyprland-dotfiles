@@ -4,7 +4,7 @@ import os
 from base import base_update
 
 CONFIG_PATH = os.path.expanduser("~/.config/Code/User/settings.json")
-CONFIG_PATH2 = os.path.expanduser("~/Hyprland-dotfiles/assets/vs_code/settings.json")
+CONFIG_PATH2 = os.path.expanduser("~/laptop-dotfiles/assets/vs_code/settings.json")
 CONFIG_TEMPLATE_PATH = "./templates/vs_settings.json"
 
 

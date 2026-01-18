@@ -3,7 +3,7 @@ import os
 
 from base import base_update
 
-CONFIG_PATH = os.path.expanduser("~/Hyprland-dotfiles/.zshenv")
+CONFIG_PATH = os.path.expanduser("~/laptop-dotfiles/.zshenv")
 CONFIG_TEMPLATE_PATH = "./templates/.zshenv_template"
 
 

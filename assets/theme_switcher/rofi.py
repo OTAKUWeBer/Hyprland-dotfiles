@@ -3,7 +3,7 @@ import os
 
 from base import base_update
 
-CONFIG_PATH = os.path.expanduser("~/Hyprland-dotfiles/.config/rofi/themes/launchpad.rasi")
+CONFIG_PATH = os.path.expanduser("~/laptop-dotfiles/.config/rofi/themes/launchpad.rasi")
 CONFIG_TEMPLATE_PATH = "./templates/rofi_template.rasi"
 
 

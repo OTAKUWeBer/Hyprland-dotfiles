@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Path to the wallpaper configuration file
-WALLPAPER_CONF=$HOME/Hyprland-dotfiles/.config/hypr/config.d/wallpaper.conf
+WALLPAPER_CONF=$HOME/laptop-dotfiles/.config/hypr/config.d/wallpaper.conf
 
 # Check if the wallpaper configuration file exists
 if [[ ! -f "$WALLPAPER_CONF" ]]; then

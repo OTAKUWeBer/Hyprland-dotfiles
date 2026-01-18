@@ -4,10 +4,10 @@ from typing import Any
 
 from base import run_shell_command
 
-CONFIG_PATH = os.path.expanduser("~/Hyprland-dotfiles/.config/hypr/config.d/wallpaper.conf")
+CONFIG_PATH = os.path.expanduser("~/laptop-dotfiles/.config/hypr/config.d/wallpaper.conf")
 CONFIG_TEMPLATE_PATH = "./templates/wallpaper_template.conf"
 
-WALLPAPERS_PATH = os.path.expanduser("~/Hyprland-dotfiles/assets/wallpapers")
+WALLPAPERS_PATH = os.path.expanduser("~/laptop-dotfiles/assets/wallpapers")
 
 
 def get_random_wallpaper(color: str, path: str) -> str | None:

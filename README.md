@@ -1,6 +1,6 @@
-# Hyprland-dotfiles
+# laptop-dotfiles
 
-This repository contains my personal Hyprland-dotfiles and configuration for setting up an Arch Linux environment with Wayland.
+This repository contains my personal laptop-dotfiles and configuration for setting up an Arch Linux environment with Wayland.
 
 ## Installation Instructions
 
@@ -16,12 +16,12 @@ This repository contains my personal Hyprland-dotfiles and configuration for set
 4. **Run the installation script**:
     ```bash
     cd ~/
-    git clone https://github.com/OTAKUWeBer/Hyprland-dotfiles
-    cd Hyprland-dotfiles
+    git clone https://github.com/OTAKUWeBer/laptop-dotfiles
+    cd laptop-dotfiles
     sudo chmod +x install-est.sh
     sudo ./install-est.sh
     cd ..
-    rm -rf Hyprland-dotfiles
+    rm -rf laptop-dotfiles
     ```
 
 5. **Exit chroot and reboot**:
@@ -36,7 +36,7 @@ This repository contains my personal Hyprland-dotfiles and configuration for set
     sudo systemctl enable --now systemd-resolved.service
     ```
     
-4. **Clone and apply Hyprland-dotfiles**:
+4. **Clone and apply laptop-dotfiles**:
     ```bash
     cd /tmp
     git clone https://aur.archlinux.org/paru-bin.git
@@ -44,13 +44,13 @@ This repository contains my personal Hyprland-dotfiles and configuration for set
     makepkg -si
     
     cd ~/
-    git clone https://github.com/OTAKUWeBer/Hyprland-dotfiles
-    cd Hyprland-dotfiles
+    git clone https://github.com/OTAKUWeBer/laptop-dotfiles
+    cd laptop-dotfiles
     git submodule init
     git submodule update --depth=1
     stow -v .
 
-    cd Hyprland-dotfiles
+    cd laptop-dotfiles
     sudo chmod +x install-pkgs.sh
     sudo ./install-pkgs.sh
     ```
@@ -62,7 +62,7 @@ This repository contains my personal Hyprland-dotfiles and configuration for set
 
 ## Keybinds
 
-Check the [keybinds.md](https://github.com/OTAKUWeBer/Hyprland-dotfiles/blob/main/keybinds.md) file for the keybind list.
+Check the [keybinds.md](https://github.com/OTAKUWeBer/laptop-dotfiles/blob/main/keybinds.md) file for the keybind list.
 
 ## Additional Configuration
 

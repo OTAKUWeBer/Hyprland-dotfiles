@@ -3,7 +3,7 @@ import os
 
 from base import base_update, run_shell_command
 
-CONFIG_PATH = os.path.expanduser("~/Hyprland-dotfiles/.config/mako/config")
+CONFIG_PATH = os.path.expanduser("~/laptop-dotfiles/.config/mako/config")
 CONFIG_TEMPLATE_PATH = "./templates/mako_template.conf"
 
 

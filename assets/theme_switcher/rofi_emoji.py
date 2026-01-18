@@ -3,7 +3,7 @@ import os
 
 from base import base_update
 
-CONFIG_PATH = os.path.expanduser("~/Hyprland-dotfiles/.config/rofi/emoji.rasi")
+CONFIG_PATH = os.path.expanduser("~/laptop-dotfiles/.config/rofi/emoji.rasi")
 CONFIG_TEMPLATE_PATH = "./templates/rofi_emoji.rasi"
 
 

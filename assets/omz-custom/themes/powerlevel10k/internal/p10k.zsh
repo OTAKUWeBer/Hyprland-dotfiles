@@ -3699,7 +3699,7 @@ function +vi-git-tagname() {
 }
 
 # Show count of stashed changes
-# Port from https://github.com/whiteinge/Hyprland-dotfiles/blob/5dfd08d30f7f2749cfc60bc55564c6ea239624d9/.zsh_shouse_prompt#L268
+# Port from https://github.com/whiteinge/laptop-dotfiles/blob/5dfd08d30f7f2749cfc60bc55564c6ea239624d9/.zsh_shouse_prompt#L268
 function +vi-git-stash() {
   if [[ -s "${vcs_comm[gitdir]}/logs/refs/stash" ]] ; then
     local -a stashes=( "${(@f)"$(<${vcs_comm[gitdir]}/logs/refs/stash)"}" )
