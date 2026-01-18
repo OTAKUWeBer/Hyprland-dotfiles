@@ -1,61 +1,59 @@
-# laptop-dotfiles
+# dotfiles
 
-This repository contains my personal laptop-dotfiles and configuration for setting up an Arch Linux environment with Wayland.
+This repository contains my personal dotfiles and configuration for setting up an Arch Linux environment with Wayland.
 
 ## Installation Instructions
 
-1. **Install Arch Linux**: Install Arch Linux using any method you prefer.
+1. **Chroot into your fresh Arch installation** (if installing from Arch ISO).
 
-2. **Chroot into your fresh Arch installation**.
-
-3. **Install `git`**:
+2. **Install Git**:
     ```bash
     sudo pacman -S git
- 
     ```
-4. **Run the installation script**:
+
+3. **Clone the repository and run installer**:
     ```bash
     cd ~/
-    git clone https://github.com/OTAKUWeBer/laptop-dotfiles
+    git clone --depth 1 https://github.com/OTAKUWeBer/laptop-dotfiles
     cd laptop-dotfiles
-    sudo chmod +x install-est.sh
-    sudo ./install-est.sh
+    sudo chmod +x scripts/install-est.sh
+    scripts/install-est.sh
     cd ..
     rm -rf laptop-dotfiles
     ```
 
-5. **Exit chroot and reboot**:
+4. **Exit chroot and reboot**:
     ```bash
     exit
     reboot
     ```
 
-6. **Enable and start NetworkManager and systemd-resolved services**:
+5. **Enable essential services**:
     ```bash
     sudo systemctl enable --now NetworkManager.service
     sudo systemctl enable --now systemd-resolved.service
     ```
-    
-4. **Clone and apply laptop-dotfiles**:
+
+6. **Install `paru` AUR helper**:
     ```bash
     cd /tmp
-    git clone https://aur.archlinux.org/paru-bin.git
-    cd paru-bin
+    git clone https://aur.archlinux.org/paru.git
+    cd paru
     makepkg -si
-    
-    cd ~/
-    git clone https://github.com/OTAKUWeBer/laptop-dotfiles
-    cd laptop-dotfiles
-    git submodule init
-    git submodule update --depth=1
-    stow -v .
-
-    cd laptop-dotfiles
-    sudo chmod +x install-pkgs.sh
-    sudo ./install-pkgs.sh
     ```
 
-8. **Activating zsh**
+7. **Apply dotfiles**:
+    ```bash
+    cd ~/
+    git clone --depth 1 https://github.com/OTAKUWeBer/laptop-dotfiles
+    cd laptop-dotfiles
+    git submodule init && git submodule update --depth=1  # required for submodules
+    stow -v .
+    sudo chmod +x scripts/install-pkgs.sh
+    scripts/install-pkgs.sh
+    ```
+
+8. **Activate Zsh**:
     ```bash
     chsh -s $(which zsh)
     ```
@@ -66,7 +64,7 @@ Check the [keybinds.md](https://github.com/OTAKUWeBer/laptop-dotfiles/blob/main/
 
 ## Additional Configuration
 
-Ensure to customize the configuration files as needed to suit your preferences. 
+Customize the configuration files as needed to suit your preferences. 
 
 ## Contributing
 
